@@ -7,10 +7,10 @@
 <!--    </parent>-->
     <modelVersion>4.0.0</modelVersion>
     <groupId>top.iot.gateway</groupId>
-    <artifactId>iot-gateway-supports</artifactId>
+    <artifactId>gateway-supports</artifactId>
     <version>1.0.0-SNAPSHOT</version>
-    <name>iot-gateway Supports</name>
-    <description>iot-gateway 默认功能实现</description>
+    <name>gateway Supports</name>
+    <description>gateway 默认功能实现</description>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
