@@ -1,6 +1,8 @@
 package top.iot.gateway.supports.cluster.redis;
 
 import lombok.SneakyThrows;
+import top.iot.gateway.core.cluster.ClusterCache;
+import top.iot.gateway.core.cluster.ServerNode;
 import top.iot.gateway.supports.cluster.ClusterLocalCache;
 import top.iot.gateway.supports.cluster.RedisHelper;
 import org.junit.Assert;
