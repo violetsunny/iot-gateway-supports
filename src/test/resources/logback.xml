@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+    <logger name="io.netty" level="warn"/>
+    　
+    <logger name="reactor.netty" level="warn"/>
+    <logger name="org.apache" level="warn"/>
+    <logger name="io.lettuce" level="warn"/>
+    <logger name="org.springframework" level="warn"/>
+    <logger name="io.rsocket.FrameLogger" level="warn"/>
+    　
+    <logger name="io.scalecube" level="warn"/>
+    　
+    <logger name="otop.iot.gateway" level="warn"/>
+    <logger name="top.iot.gateway.core.event.TopicPayload" level="debug"/>
+    <logger name="top.iot.gateway.supports.ipc" level="debug"/>
+    <logger name="top.iot.gateway.core" level="debug"/>
+    <!--    <logger name="ipc" level="trace"/>-->
+
+    <!--    　<logger name="org.jetlinks.supports.cluster" level="trace"/>-->
+    　
+    <logger name="top.iot.gateway.supports.scalecube.event.ScalecubeEventBusBroker" level="debug"/>
+
+    <logger name="top.iot.gateway.supports.scalecube.ExtendedClusterImpl" level="debug"/>
+
+    <logger name="top.iot.gateway.supports.scalecube.rpc.ScalecubeRpcManager" level="debug"/>
+
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{35} - %msg %n</pattern>
+        </encoder>
+    </appender>
+
+    <root level="debug">
+        <appender-ref ref="STDOUT"/>
+    </root>
+</configuration>
