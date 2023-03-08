@@ -63,7 +63,7 @@ public class DefaultSendToDeviceMessageHandlerTest {
         registry.register(ProductInfo
                                   .builder()
                                   .id("test")
-                                  .protocol("jetlinks.v1.0")
+                                  .protocol("iot-gateway.v1.0")
                                   .build())
                 .block();;
 

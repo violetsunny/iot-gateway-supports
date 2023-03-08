@@ -32,7 +32,7 @@ public class IotGatewayMqttDeviceMessageCodecTest {
 
         registry.register(ProductInfo.builder()
                 .id("product1")
-                .protocol("jetlinks")
+                .protocol("iot-gateway")
                 .build())
                 .flatMap(product -> registry.register(DeviceInfo.builder()
                         .id("device1")

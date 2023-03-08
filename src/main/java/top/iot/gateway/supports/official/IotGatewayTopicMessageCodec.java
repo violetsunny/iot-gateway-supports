@@ -16,7 +16,7 @@ import org.springframework.util.Assert;
 import java.util.Map;
 import java.util.Optional;
 
-@Deprecated // https://github.com/jetlinks/jetlinks-official-protocol
+@Deprecated // https://github.com/iot-gateway/iot-gateway-official-protocol
 class IotGatewayTopicMessageCodec {
 
     @Getter

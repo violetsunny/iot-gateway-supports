@@ -9,6 +9,7 @@
     <groupId>top.iot.gateway</groupId>
     <artifactId>gateway-supports</artifactId>
     <version>1.0.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
     <name>gateway Supports</name>
     <description>gateway 默认功能实现</description>
 
@@ -19,9 +20,9 @@
         <project.build.jdk>${java.version}</project.build.jdk>
         <hsweb.framework.version>4.0.15-SNAPSHOT</hsweb.framework.version>
         <hsweb.expands.version>3.0.2</hsweb.expands.version>
-        <reactor.version>2020.0.17</reactor.version>
+        <reactor.version>2020.0.26</reactor.version>
         <scalecube.version>2.10.23</scalecube.version>
-        <netty.framework.version>4.1.68.Final</netty.framework.version>
+        <netty.framework.version>4.1.86.Final</netty.framework.version>
     </properties>
 
     <dependencyManagement>
@@ -99,6 +100,7 @@
             <groupId>top.iot.gateway</groupId>
             <artifactId>gateway-core</artifactId>
             <version>1.0.0-SNAPSHOT</version>
+            <scope>provided</scope>
         </dependency>
 
         <dependency>

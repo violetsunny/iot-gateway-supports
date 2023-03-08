@@ -16,7 +16,7 @@
     <logger name="top.iot.gateway.core" level="debug"/>
     <!--    <logger name="ipc" level="trace"/>-->
 
-    <!--    　<logger name="org.jetlinks.supports.cluster" level="trace"/>-->
+    <!--    　<logger name="top.iot.gateway.supports.cluster" level="trace"/>-->
     　
     <logger name="top.iot.gateway.supports.scalecube.event.ScalecubeEventBusBroker" level="debug"/>
 

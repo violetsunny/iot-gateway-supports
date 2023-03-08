@@ -57,11 +57,11 @@ public abstract class AbstractDeviceSessionManager implements DeviceSessionManag
 
     // 检查会话是否存活的并行度
     @Setter
-    private int sessionCheckConcurrency = Integer.getInteger("jetlinks.session.check.concurrency",
+    private int sessionCheckConcurrency = Integer.getInteger("top.iot.session.check.concurrency",
                                                              Runtime.getRuntime().availableProcessors() * 64);
 
     @Setter
-    private int sessionCloseConcurrency = Integer.getInteger("jetlinks.session.close.concurrency",
+    private int sessionCloseConcurrency = Integer.getInteger("top.iot.session.close.concurrency",
                                                              3000);
 
     public abstract String getCurrentServerId();

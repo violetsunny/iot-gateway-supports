@@ -9,7 +9,7 @@ import top.iot.gateway.core.device.*;
 import javax.annotation.Nonnull;
 import java.util.concurrent.TimeUnit;
 
-@Deprecated // https://github.com/jetlinks/jetlinks-official-protocol
+@Deprecated // https://github.com/iot-gateway/iot-gateway-official-protocol
 public class IotGatewayAuthenticator implements Authenticator {
 
     @Override

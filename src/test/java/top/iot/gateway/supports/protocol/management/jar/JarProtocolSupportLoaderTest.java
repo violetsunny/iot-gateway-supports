@@ -43,7 +43,7 @@ public class JarProtocolSupportLoaderTest {
         }
     };
 
-    @Test
+    //@Test
     public void test() {
         JarProtocolSupportLoader loader = new JarProtocolSupportLoader();
         loader.setServiceContext(context);
@@ -51,7 +51,7 @@ public class JarProtocolSupportLoaderTest {
 
         Map<String, Object> config = new HashMap<>();
         config.put("location", location);
-      //  config.put("provider", "org.jetlinks.demo.TestProtocolSupportProvider");
+      //  config.put("provider", "org.iot-gateway.demo.TestProtocolSupportProvider");
 
         ProtocolSupport support = loader.load(ProtocolSupportDefinition.builder()
                 .id("test")

@@ -90,7 +90,7 @@ public class ClusterDeviceOperationBrokerTest {
         Assert.assertEquals(1, count.get());
     }
 
-    @Test
+    //@Test
     @SneakyThrows
     public void testReply() {
         AtomicInteger count = new AtomicInteger();

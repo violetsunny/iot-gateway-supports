@@ -18,7 +18,7 @@ public class ServiceLoaderProtocolSupportsTest {
 
     @Test
     public void test() {
-        Assert.assertTrue(supports.isSupport("jetlinks.v1.0"));
+        Assert.assertTrue(supports.isSupport("iot-gateway.v1.0"));
     }
 
 }

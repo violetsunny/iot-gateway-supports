@@ -8,7 +8,7 @@ import top.iot.gateway.core.metadata.*;
 import top.iot.gateway.core.metadata.types.*;
 import top.iot.gateway.core.spi.*;
 
-@Deprecated // https://github.com/jetlinks/jetlinks-official-protocol
+@Deprecated // https://github.com/iot-gateway/iot-gateway-official-protocol
 @Slf4j
 public class IotGatewayProtocolSupportProvider implements ProtocolSupportProvider {
 
@@ -40,13 +40,13 @@ public class IotGatewayProtocolSupportProvider implements ProtocolSupportProvide
 
     @Override
     public Mono<CompositeProtocolSupport> create(ServiceContext context) {
-        log.warn("内置官方协议支持即将弃用,请使用 https://github.com/jetlinks/jetlinks-official-protocol");
+        log.warn("内置官方协议支持即将弃用,请使用 https://github.com/iot-gateway/iot-gateway-official-protocol");
         return Mono.defer(() -> {
             CompositeProtocolSupport support = new CompositeProtocolSupport();
 
-            support.setId("jetlinks.v1.0");
-            support.setName("JetLinks V1.0");
-            support.setDescription("JetLinks Protocol Version 1.0");
+            support.setId("iot-gateway.v1.0");
+            support.setName("iot-gateway V1.0");
+            support.setDescription("iot-gateway Protocol Version 1.0");
 
             support.addAuthenticator(DefaultTransport.MQTT, new IotGatewayAuthenticator());
             support.addAuthenticator(DefaultTransport.MQTT_TLS, new IotGatewayAuthenticator());

@@ -92,7 +92,7 @@ public class IotGatewayDeviceMetadataCodec implements DeviceMetadataCodec {
 
     @Override
     public String getId() {
-        return "jetlinks";
+        return "iot-gateway";
     }
 
     public DeviceMetadata doDecode(String json) {

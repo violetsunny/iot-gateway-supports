@@ -16,7 +16,7 @@ import java.nio.charset.StandardCharsets;
 import java.util.function.Consumer;
 
 @Slf4j
-@Deprecated // https://github.com/jetlinks/jetlinks-official-protocol
+@Deprecated // https://github.com/iot-gateway/iot-gateway-official-protocol
 public class IotGatewayCoapDTLSDeviceMessageCodec extends IotGatewayTopicMessageCodec implements DeviceMessageCodec {
 
     @Override

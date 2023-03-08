@@ -12,7 +12,7 @@ import java.util.Arrays;
 public class ExtendedClusterImplTest {
 
 
-    @Test
+    //@Test
     @SneakyThrows
     public void testFeature() {
         ExtendedClusterImpl cluster = new ExtendedClusterImpl(

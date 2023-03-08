@@ -129,7 +129,7 @@ public class EventBusDeviceOperationBroker extends AbstractDeviceOperationBroker
                     .publish("/_sys/device-state-check/".concat(deviceGatewayServerId), request)
                     .flatMapMany(i -> {
                         if (i == 0) {
-                            log.warn("JetLinks server [{}] not found", deviceGatewayServerId);
+                            log.warn("gateway server [{}] not found", deviceGatewayServerId);
                             return Mono.empty();
                         }
                         return processor.asMono().flatMapIterable(DeviceCheckResponse::getStateInfoList);

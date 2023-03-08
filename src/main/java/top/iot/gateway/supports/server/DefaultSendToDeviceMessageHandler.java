@@ -85,7 +85,7 @@ public class DefaultSendToDeviceMessageHandler {
                         children.setChildDeviceId(deviceId);
                         children.setChildDeviceMessage(message);
                         // 没有传递header
-                        // https://github.com/jetlinks/jetlinks-pro/issues/19
+                        // https://github.com/iot-gateway/iot-gateway-pro/issues/19
                         if (null != message.getHeaders()) {
                             Map<String, Object> newHeader = new ConcurrentHashMap<>(message.getHeaders());
                             newHeader.remove("productId");

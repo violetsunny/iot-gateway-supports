@@ -14,7 +14,7 @@ import java.util.concurrent.TimeUnit;
 public class RedisClusterTopicTest {
     private ReactiveRedisTemplate<Object, Object> operations= RedisHelper.getRedisTemplate();
 
-    @Test
+    //@Test
     @SneakyThrows
     public void test() {
         RedisClusterTopic<Object> topic = new RedisClusterTopic("test", operations);

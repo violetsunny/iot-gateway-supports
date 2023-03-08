@@ -84,7 +84,7 @@ public class RedisClusterQueue<T> extends VisitCount implements ClusterQueue<T> 
     );
 
     @Setter
-    private boolean useScript = "true".equals(System.getProperty("jetlinks.cluster.redus.queue.batch.enabled", "true"));
+    private boolean useScript = "true".equals(System.getProperty("top.iot.cluster.redus.queue.batch.enabled", "true"));
 
     public RedisClusterQueue(String id, ReactiveRedisTemplate<String, T> operations) {
         this.id = id;
